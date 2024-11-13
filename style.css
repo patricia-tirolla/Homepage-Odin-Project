@@ -124,7 +124,7 @@ main {
         justify-content: center;
         padding: 0 30px;
 
-        /* height: fit-content; */
+        height: fit-content;
         background-color: var(--background-projects);
 
         #projects-container {
