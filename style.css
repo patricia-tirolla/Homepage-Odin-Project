@@ -83,6 +83,15 @@ main {
             width: 100%;
             max-width: 1024px;
 
+            @media(max-width: 768px) {
+                max-width: (768 - 60)px;
+            }
+
+            @media (max-width: 425px) {
+                flex-direction: column;
+                align-items: center;
+            }
+
             #about-section-text-container {
                 display: flex;
                 flex-direction: column;
@@ -115,6 +124,7 @@ main {
         justify-content: center;
         padding: 0 30px;
 
+        /* height: fit-content; */
         background-color: var(--background-projects);
 
         #projects-container {
@@ -125,7 +135,6 @@ main {
 
             width: 100%;
             max-width: 1024px;
-            height: fit-content;
 
             p {
                 margin: 0;
@@ -134,10 +143,23 @@ main {
 
             #projects-grid {
                 display: grid;
-                grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+                grid-template: repeat(2, 275px) / repeat(3, 1fr);
+                justify-items: center;
                 gap: 20px;
-                height: 50vh;
-    
+                
+                @media(max-width: 768px) {
+                    grid-template: 1fr / repeat(2, 1fr);
+                    height: 310px;
+                    overflow: scroll;
+                }
+
+                @media(max-width: 425px) {
+                    grid-template-columns: 1fr;
+                    height: 310px;
+                    overflow: scroll;
+                }
+
+
                 .project-cell {
                     display: flex;
                     flex-direction: column;
@@ -196,9 +218,12 @@ footer {
             justify-content: space-evenly;
             align-items: center;
 
-            padding: 0 30px;
             width: 100%;
             max-width: 1024px;
+
+            @media (max-width: 425px) {
+                flex-direction: column-reverse;
+            }
 
             p {
                 font-weight: 100;
