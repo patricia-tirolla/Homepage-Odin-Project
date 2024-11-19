@@ -6,10 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patricia Tirolla</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about-section.css">
+    <link rel="stylesheet" href="project-section.css">
+    <link rel="stylesheet" href="footer.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font jetbrains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 
     <link href="assets/fontawesome/css/all.min.css" rel="stylesheet" />
@@ -21,9 +32,10 @@
     <header>
         <div id="header-container">
             <a href="https://patriciatirolla.com/">
-                <img id="logo" src="./assets/Logo PT beje marrom (15).png" alt="patricia-tirolla-logo" height="30px" width="30px">
+                <img id="logo" src="./assets/Logo PT beje marrom (15).png" alt="patricia-tirolla-logo" height="30px"
+                    width="30px">
             </a>
-            
+
             <nav id="header-nav-container">
                 <a class="header-nav" href="">About</a>
                 <a class="header-nav" href="">Contact</a>
@@ -31,6 +43,7 @@
             </nav>
         </div>
     </header>
+
     <main>
         <section id="about-section">
             <div id="about-section-container">
@@ -42,6 +55,8 @@
                 <!-- <img id="profile-img" src="./assets/profile-duocolor.png" alt="" width="250px" height="320px"> -->
             </div>
         </section>
+
+
         <section id="projects-section">
             <div id="projects-container">
 
@@ -51,70 +66,129 @@
 
                     <div class="project-cell">
 
-                        <div class="project-link-container">
-                            <a href="https://github.com/patricia-tirolla/Todo-list-Odin-Project-">
-                                <img src="./assets/todo-list.png" alt="">
-                            </a>
+                        <div class="project-image-container">
+
+                            <img src="./assets/todo-list.png" alt="">
                         </div>
 
                         <div class="project-text-container">
-                            <p class="project-text">Todo-list-Odin-Project-</p>
-                            <p class="project-text">Webpack - JSON - Single Responsibility </p>
+                            <div class="text-tag-container">
+                                <h6 class="project-text">Todo-list-Odin-Project</h6>
+                                <p class="project-text">Webpack - JSON - <br>Single Responsibility </p>
+                            </div>
+
+                            <div class="skills-buttons-container">
+                                <div class="project-skills-container">
+                                    <span class="project-skills">HTLM</span>
+                                    <span class="project-skills">CSS</span>
+                                    <span class="project-skills">JavaScript</span>
+                                </div>
+
+                                <div class="project-buttons-container">
+                                    <a href="https://patricia-tirolla.github.io/Todo-list-Odin-Project-/">
+                                        <button class="project-buttons live-demo-button">Live Demo</button>
+                                    </a>
+
+                                    <a href="https://github.com/patricia-tirolla/Todo-list-Odin-Project-">
+                                        <button class="project-buttons view-source-button">View Source</button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="project-cell">
 
-                        <div class="project-link-container">
-                            <a href="https://patricia-tirolla.github.io/Admin-Dashboard-Odin-Project-/">
+                        <div class="project-image-container">
+                            <a href="">
                                 <img src="./assets/admin-dashboard.png" alt="">
                             </a>
                         </div>
 
                         <div class="project-text-container">
-                            <p class="project-text">Admin-Dashboard-Odin-Project-</p>
-                            <p class="project-text">CSS Grid</p>
+                            <div class="text-tag-container">
+                                <h6 class="project-text">Admin Dashboard-Odin Project</h6>
+                                <p class="project-text">CSS Grid</p>
+                            </div>
+
+                            <div class="skills-buttons-container">
+                                <div class="project-skills-container">
+                                    <span class="project-skills">HTLM</span>
+                                    <span class="project-skills">CSS</span>
+                                    <span class="project-skills">JavaScript</span>
+                                </div>
+
+                                <div class="project-buttons-container">
+                                    <a href="https://patricia-tirolla.github.io/Admin-Dashboard-Odin-Project-/">
+                                        <button class="project-buttons live-demo-button">Live Demo</button>
+                                    </a>
+
+                                    <a href="https://github.com/patricia-tirolla/Admin-Dashboard-Odin-Project-">
+                                        <button class="project-buttons view-source-button">View Source</button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="project-cell">
 
-                        <div class="project-link-container">
+                        <div class="project-image-container">
                             <a href="https://patricia-tirolla.github.io/Tic-Tac-Toe-Odin-Project-/">
                                 <img src="./assets/tic-tac-toe.png" alt="">
                             </a>
                         </div>
 
                         <div class="project-text-container">
-                            <p class="project-text">Tic-Tac-Toe-Odin-Project-</p>
-                            <p class="project-text">Factory Function</p>
+                            <div class="text-tag-container">
+                                <h6 class="project-text">Tic Tac Toe - Odin Project</h6>
+                                <p class="project-text">Factory Functions</p>
+                            </div>
+
+                            <div class="skills-buttons-container">
+                                <div class="project-skills-container">
+                                    <span class="project-skills">HTLM</span>
+                                    <span class="project-skills">CSS</span>
+                                    <span class="project-skills">JavaScript</span>
+                                </div>
+
+                                <div class="project-buttons-container">
+                                    <a href="https://patricia-tirolla.github.io/Tic-Tac-Toe-Odin-Project-/">
+                                        <button class="project-buttons live-demo-button">Live Demo</button>
+                                    </a>
+
+                                    <a href="https://github.com/patricia-tirolla/Tic-Tac-Toe-Odin-Project-">
+                                        <button class="project-buttons view-source-button">View Source</button>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="project-cell">
 
-                        <div class="project-link-container">
+                        <div class="project-image-container">
                             <a href="https://patricia-tirolla.github.io/Tic-Tac-Toe-Odin-Project-/">
                                 <img src="./assets/tic-tac-toe.png" alt="">
                             </a>
                         </div>
 
                         <div class="project-text-container">
-                            <p class="project-text">Tic-Tac-Toe-Odin-Project-</p>
+                            <h6 class="project-text">Tic-Tac-Toe-Odin-Project</h6>
                             <p class="project-text">Factory Function</p>
                         </div>
-                    
+
                     </div>
                     <div class="project-cell">
 
-                        <div class="project-link-container">
+                        <div class="project-image-container">
                             <a href="https://patricia-tirolla.github.io/Homepage-Odin-Project/">
                                 <img src="./assets/homepage.png" alt="">
                             </a>
                         </div>
 
                         <div class="project-text-container">
-                            <p class="project-text">Homepage-Odin-Project-</p>
+                            <h6 class="project-text">Homepage-Odin-Project</h6>
                             <p class="project-text">Creating Portifolio</p>
                         </div>
 

@@ -1,0 +1,147 @@
+#projects-section {
+    display: flex;
+    justify-content: center;
+    padding: 0 30px;
+
+    height: fit-content;
+    background-color: var(--background-projects);
+
+    #projects-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+
+        width: 100%;
+        max-width: 1024px;
+
+        p {
+            margin: 0;
+            padding: 20px;
+        }
+
+        @media (max-width: 425px) {
+            font-size: 0.9rem;
+        }
+
+        #projects-grid {
+            display: grid;
+            grid-template: auto / 850px;
+            justify-items: center;
+            gap: 20px;
+
+            @media(max-width: 768px) {
+                grid-template: 1fr / repeat(2, 1fr);
+                height: 310px;
+                overflow: scroll;
+            }
+
+            @media(max-width: 425px) {
+                grid-template-columns: 1fr;
+                height: 310px;
+                overflow: scroll;
+            }
+
+            .project-cell {
+                display: flex;
+                gap: 20px;
+
+                /* flex-direction: column; */
+                padding: 10px;
+                border: 0.5px solid var(--background-light);
+                border-radius: 8px;
+                box-shadow: var(--shadow-blue);
+                background-color: var(--background-footer);
+
+                .project-image-container {
+                    display: flex;
+                    height: 70%;
+                    overflow: hidden;
+                    height: fit-content;
+                    /* padding: 10px; */
+
+                    border: 0.5px solid var(--background-light);
+                    border-radius: 8px;
+                    box-shadow: var(--shadow-light);
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .project-text-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    gap: 40px;
+
+                    padding: 10px 0;
+                    min-width: 300px;
+
+                    .text-tag-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .project-text {
+                            padding: 0;
+                            font-size: 1rem;
+                            margin: 0;
+                        }
+                    }
+
+                    .skills-buttons-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+
+                        .project-skills-container {
+                            display: flex;
+                            gap: 5px;
+                            font-size: 0.7rem;
+    
+    
+                            .project-skills {
+                                padding: 3px 5px;
+                                border: solid 2px var(--blue);
+                                border-radius: 4px;
+                            }
+                        }
+
+                        .project-buttons-container {
+                            display: flex;
+                            gap: 20px;
+    
+                            .project-buttons {
+                                padding: 10px 20px;
+                                background-color: var(--blue);
+                                border: none;
+                                border-radius: 4px;
+                                box-shadow: var(--shadow-light)
+                            }
+    
+                            .live-demo-button {
+                                color: var(--background-footer);
+                            }
+    
+                            .view-source-button {
+                                background-color: var(--background-footer);
+                                color: var(--blue); 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ----------------------- HOVER */
+.project-cell:hover {
+    box-shadow: var(--shadow-hover);
+}
+
+.project-buttons:hover {
+    cursor: pointer;
+}
