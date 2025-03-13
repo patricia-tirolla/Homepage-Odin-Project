@@ -138,10 +138,11 @@
 }
 
 /* ----------------------- HOVER */
-.project-cell:hover {
+#projects-section #projects-container #projects-grid .project-cell:hover {
     box-shadow: var(--shadow-hover);
 }
 
-.project-buttons:hover {
+#projects-section #projects-container #projects-grid .project-cell .project-buttons:hover {
     cursor: pointer;
+    box-shadow: var(--shadow-hover);
 }
